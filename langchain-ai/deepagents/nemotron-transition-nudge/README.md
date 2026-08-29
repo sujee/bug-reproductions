@@ -1,5 +1,7 @@
 # Nemotron transition nudge during a single-turn filesystem task
 
+https://github.com/langchain-ai/deepagents/issues/5982
+
 ## Summary
 
 `NemotronPolicyNudgeMiddleware` can classify an in-progress, single-turn
@@ -53,4 +55,4 @@ expressions even though it is still the first and only user turn.
 
 - Repository: <https://github.com/langchain-ai/deepagents>
 - Nemotron harness profile: <https://github.com/langchain-ai/deepagents/pull/4192>
-- Upstream issue: not filed
+- Upstream issue: https://github.com/langchain-ai/deepagents/issues/5982
