@@ -1,12 +1,12 @@
-# Nemotron NemotronPolicyNudgeMiddleware Issue
+# NemotronPolicyNudgeMiddleware Issue
 
 
-## Title 
+## Title
 
 NemotronPolicyNudgeMiddleware misclassifies an in-progress single-turn filesystem task as a task transition
 
 
-## Description 
+## Description
 
 `NemotronPolicyNudgeMiddleware._should_compact_on_transition()` can classify an
 in-progress single-turn filesystem task as a transition to new work.
@@ -53,5 +53,5 @@ register_harness_profile(
 ```
 OS : MacOS Tahoe
 Python : 3.12
-Deep agents : 0.7.11
+Deep agents : 0.7.10
 ```
