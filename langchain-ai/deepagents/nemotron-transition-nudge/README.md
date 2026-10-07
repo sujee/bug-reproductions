@@ -8,9 +8,6 @@
 filesystem task as a transition to new work. It then injects guidance to call
 `compact_conversation` even though the user has not supplied a second request.
 
-The reproduction is deterministic. It exercises the transition heuristic
-directly and does not make a model call or require an API key.
-
 **Tested version**
 
 - Python 3.12 or later
@@ -22,6 +19,7 @@ Verified fix in v0.7.23 ✅
 
 ## Reproduction
 
-- [repro](repro/) - **minimal reproduction code**
+- [repro](repro/) - **minimal reproduction code**.  The reproduction is deterministic. It exercises the transition heuristic
+directly and does not make a model call or require an API key.
 - [bug](bug/) - original code where the bug surfaced.  (Needs NEBIUS_API_KEY to run)
 - [fix](fix/) - fix verification with updated version.  (Needs NEBIUS_API_KEY to run)
